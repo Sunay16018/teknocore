@@ -1,14 +1,16 @@
 {
   "name": "TEKNOÇEKİRDEK | PREMIUM TEKNOLOJİ KOLEKSİYONU",
   "short_name": "TEKNOÇEK",
-  "description": "Profesyonel mavi tonlarında, 50+ özel tasarım ikon, 15 renk paleti, 4096x4096 ultra yüksek çözünürlük, 100+ katman, metalik efektler, kristal dokular ve ışık oyunlarıyla tasarlanmış premium teknoloji koleksiyonu. Her ikon özenle hazırlandı, vektörel kalitede, 8K desteği ile.",
+  "description": "Profesyonel mavi tonlarında, 50+ özel tasarım ikon, 15 renk paleti, 4096x4096 ultra yüksek çözünürlük, 100+ katman, metalik efektler, kristal dokular ve ışık oyunlarıyla tasarlanmış premium teknoloji koleksiyonu.",
   
-  "start_url": "/?utm_source=pwa_homescreen&utm_medium=pwa&utm_campaign=main_launch_2024",
+  "start_url": "/teknocore/?utm_source=pwa_homescreen&utm_medium=pwa&utm_campaign=main_launch_2024",
   "display": "standalone",
+  "display_override": ["fullscreen", "standalone", "minimal-ui", "window-controls-overlay"],
+  
   "background_color": "#0A1929",
   "theme_color": "#4169E1",
   "orientation": "portrait-primary",
-  "scope": "/",
+  "scope": "/teknocore/",
   "lang": "tr-TR",
   "dir": "ltr",
   
@@ -175,7 +177,7 @@
       "name": "İkon Galerisi",
       "short_name": "İkonlar",
       "description": "Tüm profesyonel ikonları görüntüle, detaylı incele, renk uyumlarını keşfet, favorilerine ekle",
-      "url": "/#gallery",
+      "url": "/teknocore/#gallery",
       "icons": [
         {
           "src": "icons/icon-96.png",
@@ -191,7 +193,7 @@
       "name": "Renk Paletleri",
       "short_name": "Renkler",
       "description": "15 farklı renk paleti, mavi tonları, altın vurgular, metalik efektler, gradient geçişler",
-      "url": "/#colors",
+      "url": "/teknocore/#colors",
       "icons": [
         {
           "src": "icons/icon-96.png",
@@ -203,7 +205,7 @@
       "name": "Premium Koleksiyon",
       "short_name": "Premium",
       "description": "Özel tasarım, 100+ katmanlı, 4096x4096 ultra yüksek çözünürlüklü premium ikonlar",
-      "url": "/#premium",
+      "url": "/teknocore/#premium",
       "icons": [
         {
           "src": "icons/icon-96.png",
@@ -215,7 +217,7 @@
       "name": "Teknoloji Çekirdeği",
       "short_name": "Çekirdek",
       "description": "Ana uygulama ikonu, 4096x4096 çözünürlük, 20+ katman, metalik efektler",
-      "url": "/#core",
+      "url": "/teknocore/#core",
       "icons": [
         {
           "src": "icons/icon-96.png",
@@ -227,7 +229,7 @@
       "name": "Sık Kullanılanlar",
       "short_name": "Favoriler",
       "description": "En çok beğenilen ikonlar, kişisel koleksiyonun, özel seçimler",
-      "url": "/#favorites",
+      "url": "/teknocore/#favorites",
       "icons": [
         {
           "src": "icons/icon-96.png",
@@ -239,7 +241,7 @@
       "name": "Yardım & Destek",
       "short_name": "Yardım",
       "description": "SSS, kullanım kılavuzu, iletişim, geri bildirim gönder",
-      "url": "/#help",
+      "url": "/teknocore/#help",
       "icons": [
         {
           "src": "icons/icon-96.png",
@@ -252,27 +254,12 @@
   "related_applications": [
     {
       "platform": "webapp",
-      "url": "https://teknocore.app"
+      "url": "https://sunay16018.github.io/teknocore/"
     },
     {
       "platform": "play",
-      "url": "https://play.google.com/store/apps/details?id=app.teknocore",
-      "id": "app.teknocore"
-    },
-    {
-      "platform": "itunes",
-      "url": "https://apps.apple.com/app/teknocore/id123456789",
-      "id": "123456789"
-    },
-    {
-      "platform": "windows",
-      "url": "https://www.microsoft.com/store/apps/teknocore",
-      "id": "teknocore"
-    },
-    {
-      "platform": "chrome_web_store",
-      "url": "https://chrome.google.com/webstore/teknocore",
-      "id": "teknocore"
+      "url": "https://play.google.com/store/apps/details?id=io.github.sunay16018.twa",
+      "id": "io.github.sunay16018.twa"
     }
   ],
   
@@ -294,20 +281,20 @@
   "protocol_handlers": [
     {
       "protocol": "web+teknocore",
-      "url": "/handle-protocol?type=%s"
+      "url": "/teknocore/handle-protocol?type=%s"
     },
     {
       "protocol": "web+teknocore-gallery",
-      "url": "/gallery?type=%s"
+      "url": "/teknocore/gallery?type=%s"
     },
     {
       "protocol": "web+teknocore-icon",
-      "url": "/icon?name=%s"
+      "url": "/teknocore/icon?name=%s"
     }
   ],
   
   "share_target": {
-    "action": "/share-target",
+    "action": "/teknocore/share-target",
     "method": "POST",
     "enctype": "multipart/form-data",
     "params": {
@@ -329,7 +316,7 @@
   
   "file_handlers": [
     {
-      "action": "/open-file",
+      "action": "/teknocore/open-file",
       "accept": {
         "image/png": [".png"],
         "image/jpeg": [".jpg", ".jpeg"],
@@ -349,7 +336,7 @@
       ]
     },
     {
-      "action": "/open-image",
+      "action": "/teknocore/open-image",
       "accept": {
         "image/*": [".png", ".jpg", ".jpeg", ".webp", ".svg", ".ico"]
       },
@@ -363,26 +350,17 @@
   ],
   
   "note_taking": {
-    "action": "/new-note"
+    "action": "/teknocore/new-note"
   },
   
   "capture_links": "never",
   
   "scope_extensions": [
     {
-      "origin": "*.teknocore.app"
+      "origin": "*.github.io"
     },
     {
-      "origin": "*.teknocore.com"
-    },
-    {
-      "origin": "*.teknocore.net"
-    },
-    {
-      "origin": "*.teknocore.org"
-    },
-    {
-      "origin": "teknocore.vercel.app"
+      "origin": "sunay16018.github.io"
     }
   ],
   
@@ -395,15 +373,12 @@
   "offline_enabled": true,
   
   "permissions": [
-    "storage",
-    "notifications",
-    "file-handling"
+    "storage"
   ],
   
   "features": [
     "Cross-Platform",
     "Offline Support",
-    "Push Notifications",
     "File Handling",
     "Share Target",
     "Protocol Handlers",
