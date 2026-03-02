@@ -1,25 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TEKNOÇEKİRDEK</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>TEKNOÇEKİRDEK | Premium Teknoloji Koleksiyonu</title>
+    
+    <!-- MANIFEST -->
     <link rel="manifest" href="manifest.json">
-    <link rel="icon" href="icons/icon-32.png">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- META -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="TEKNOÇEK">
+    <meta name="theme-color" content="#4169E1">
+    <meta name="description" content="50+ profesyonel ikon, 15 renk paleti, 4096x4096 çözünürlük, 100+ katmanlı premium teknoloji koleksiyonu.">
+    
+    <!-- ICONS -->
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/icon-32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+    <link rel="apple-touch-icon" href="icons/icon-180.png">
+    
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
     <!-- CSS -->
-    <link rel="stylesheet" href="css/01-nav.css">
-    <link rel="stylesheet" href="css/02-mobile-menu.css">
-    <link rel="stylesheet" href="css/03-hero.css">
-    <link rel="stylesheet" href="css/04-stats.css">
-    <link rel="stylesheet" href="css/05-buttons.css">
-    <link rel="stylesheet" href="css/06-install.css">
-    <link rel="stylesheet" href="css/07-footer.css">
-    <link rel="stylesheet" href="css/08-loader.css">
-    <link rel="stylesheet" href="css/09-responsive.css">
-    <link rel="stylesheet" href="css/10-gallery.css">
+    <link rel="stylesheet" href="css/01-colors.css">
+    <link rel="stylesheet" href="css/02-gradients.css">
+    <link rel="stylesheet" href="css/03-shadows.css">
+    <link rel="stylesheet" href="css/04-reset.css">
+    <link rel="stylesheet" href="css/05-scrollbar.css">
+    <link rel="stylesheet" href="css/06-background.css">
+    <link rel="stylesheet" href="css/07-stars.css">
+    <link rel="stylesheet" href="css/08-orbs.css">
+    <link rel="stylesheet" href="css/09-nav.css">
+    <link rel="stylesheet" href="css/10-hero.css">
+    <link rel="stylesheet" href="css/11-buttons.css">
+    <link rel="stylesheet" href="css/12-stats.css">
+    <link rel="stylesheet" href="css/13-gallery.css">
+    <link rel="stylesheet" href="css/14-colors.css">
+    <link rel="stylesheet" href="css/15-premium.css">
+    <link rel="stylesheet" href="css/16-features.css">
+    <link rel="stylesheet" href="css/17-footer.css">
+    <link rel="stylesheet" href="css/18-mobile.css">
+    <link rel="stylesheet" href="css/19-loader.css">
+    <link rel="stylesheet" href="css/20-install.css">
+    
+    <style>
+        /* PWA tam ekran düzeltmeleri */
+        @media (display-mode: standalone), (display-mode: fullscreen) {
+            body {
+                padding-top: env(safe-area-inset-top);
+                padding-bottom: env(safe-area-inset-bottom);
+                padding-left: env(safe-area-inset-left);
+                padding-right: env(safe-area-inset-right);
+            }
+            
+            nav {
+                padding-top: calc(1rem + env(safe-area-inset-top));
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- LOADER -->
@@ -28,19 +69,31 @@
     </div>
 
     <!-- BACKGROUND -->
-    <div style="position:fixed; top:0; left:0; width:100%; height:100%; z-index:-1; background:radial-gradient(circle at 30% 30%, #1E3C72, #0A1929);"></div>
+    <div class="background">
+        <div class="background-gradient"></div>
+        <div class="background-stars" id="stars"></div>
+        <div class="orb1"></div>
+        <div class="orb2"></div>
+    </div>
+
+    <!-- FLOATING ICONS -->
+    <div class="floating-icons"></div>
 
     <!-- NAVBAR -->
-    <nav>
+    <nav id="navbar">
         <div class="logo">
             <img src="icons/icon-48.png" alt="TEKNOÇEKİRDEK">
             <span>TEKNOÇEK</span>
         </div>
+        
         <div class="desktop-menu">
             <a href="#home"><i class="fas fa-home"></i> Ana</a>
             <a href="#gallery"><i class="fas fa-images"></i> Galeri</a>
+            <a href="#colors"><i class="fas fa-palette"></i> Renkler</a>
+            <a href="#premium"><i class="fas fa-crown"></i> Premium</a>
             <a href="#" class="install-btn" id="installBtn"><i class="fas fa-download"></i> Kur</a>
         </div>
+
         <div class="menu-toggle" id="menuToggle">
             <i class="fas fa-bars"></i>
         </div>
@@ -49,72 +102,333 @@
     <!-- MOBİL MENÜ -->
     <div class="mobile-menu" id="mobileMenu">
         <a href="#home" class="mobile-link"><i class="fas fa-home"></i> Ana Sayfa</a>
-        <a href="#gallery" class="mobile-link"><i class="fas fa-images"></i> Galeri</a>
-        <a href="#" class="install-btn" id="mobileInstallBtn"><i class="fas fa-download"></i> Kur</a>
+        <a href="#gallery" class="mobile-link"><i class="fas fa-images"></i> İkon Galerisi</a>
+        <a href="#colors" class="mobile-link"><i class="fas fa-palette"></i> Renk Paletleri</a>
+        <a href="#premium" class="mobile-link"><i class="fas fa-crown"></i> Premium Koleksiyon</a>
+        <a href="#" class="install-btn" id="mobileInstallBtn"><i class="fas fa-download"></i> Uygulamayı Kur</a>
     </div>
 
     <!-- ANA İÇERİK -->
-    <div style="margin-top:70px; width:100%; max-width:1200px; margin-left:auto; margin-right:auto; padding:0 5%;">
-        
-        <!-- HERO -->
+    <main>
+        <!-- HERO SECTION -->
         <section class="hero" id="home">
-            <div class="hero-left">
-                <span class="badge"><i class="fas fa-crown"></i> PREMIUM</span>
-                <h1><span>TEKNO</span><span>ÇEKİRDEK</span></h1>
-                <p>50+ ikon • 15 renk • 4096x4096 • 100+ katman</p>
-                <div class="hero-stats">
-                    <div class="stat-item"><span class="stat-number">50+</span><span class="stat-label">İKON</span></div>
-                    <div class="stat-item"><span class="stat-number">15</span><span class="stat-label">RENK</span></div>
-                    <div class="stat-item"><span class="stat-number">4K</span><span class="stat-label">ÇÖZÜNÜRLÜK</span></div>
+            <div class="hero-content">
+                <div class="hero-left">
+                    <span class="badge"><i class="fas fa-crown"></i> PREMIUM TEKNOLOJİ</span>
+                    <h1>
+                        <span>TEKNO</span>
+                        <span>ÇEKİRDEK</span>
+                    </h1>
+                    <p>50+ profesyonel ikon, 15 renk paleti, 4096x4096 ultra yüksek çözünürlük, 100+ katman ile tasarlanmış premium teknoloji koleksiyonu.</p>
+                    
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">İKON</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">15</span>
+                            <span class="stat-label">RENK</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">4K</span>
+                            <span class="stat-label">ÇÖZÜNÜRLÜK</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">100+</span>
+                            <span class="stat-label">KATMAN</span>
+                        </div>
+                    </div>
+
+                    <div class="hero-buttons">
+                        <a href="#gallery" class="btn btn-primary"><i class="fas fa-rocket"></i> KEŞFET</a>
+                        <a href="#" class="btn btn-secondary" id="downloadBtn"><i class="fas fa-download"></i> İNDİR</a>
+                    </div>
                 </div>
-                <div class="hero-buttons">
-                    <a href="#gallery" class="btn btn-primary"><i class="fas fa-rocket"></i> KEŞFET</a>
-                    <a href="#" class="btn btn-secondary"><i class="fas fa-download"></i> İNDİR</a>
+                
+                <div class="hero-right">
+                    <div class="hero-image">
+                        <img src="icons/icon-512.png" alt="TEKNOÇEKİRDEK İkon">
+                        
+                        <div class="floating-card card-1">
+                            <i class="fas fa-star"></i>
+                            <div class="text">
+                                50+ İKON
+                                <small>Profesyonel</small>
+                            </div>
+                        </div>
+                        
+                        <div class="floating-card card-2">
+                            <i class="fas fa-palette"></i>
+                            <div class="text">
+                                15 RENK
+                                <small>Palet</small>
+                            </div>
+                        </div>
+                        
+                        <div class="floating-card card-3">
+                            <i class="fas fa-gem"></i>
+                            <div class="text">
+                                4K KALİTE
+                                <small>Ultra HD</small>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="hero-right">
-                <img src="icons/icon-512.png" alt="TEKNOÇEKİRDEK">
             </div>
         </section>
 
-        <!-- STATS -->
-        <div class="stats-section">
-            <div class="stat-card"><i class="fas fa-download"></i><div class="number">1M+</div><div>İndirme</div></div>
-            <div class="stat-card"><i class="fas fa-star"></i><div class="number">4.9</div><div>Puan</div></div>
-            <div class="stat-card"><i class="fas fa-users"></i><div class="number">500K+</div><div>Kullanıcı</div></div>
-            <div class="stat-card"><i class="fas fa-gem"></i><div class="number">50+</div><div>Premium</div></div>
-        </div>
+        <!-- STATS SECTION -->
+        <section class="stats-section">
+            <div class="stats-grid">
+                <div class="stat-card" data-aos="fade-up">
+                    <i class="fas fa-download"></i>
+                    <div class="number">1M+</div>
+                    <div>İndirme</div>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-star"></i>
+                    <div class="number">4.9</div>
+                    <div>Puan</div>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-users"></i>
+                    <div class="number">500K+</div>
+                    <div>Kullanıcı</div>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fas fa-gem"></i>
+                    <div class="number">50+</div>
+                    <div>Premium</div>
+                </div>
+            </div>
+        </section>
 
-        <!-- GALERİ -->
-        <section id="gallery">
-            <h2><span>İKON GALERİSİ</span></h2>
-            <p>50+ profesyonel ikon</p>
+        <!-- GALLERY SECTION -->
+        <section class="gallery" id="gallery">
+            <div class="section-header">
+                <h2><span>İKON GALERİSİ</span></h2>
+                <p>50+ profesyonel ikon, her biri özel tasarım</p>
+            </div>
+
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">Tümü</button>
+                <button class="filter-btn" data-filter="tech">Teknoloji</button>
+                <button class="filter-btn" data-filter="science">Bilim</button>
+                <button class="filter-btn" data-filter="nature">Doğa</button>
+                <button class="filter-btn" data-filter="geometric">Geometrik</button>
+            </div>
+
             <div class="gallery-grid">
-                <div class="gallery-item"><img src="icons/icon-96.png" alt=""><p>Yıldız</p></div>
-                <div class="gallery-item"><img src="icons/icon-128.png" alt=""><p>Atom</p></div>
-                <div class="gallery-item"><img src="icons/icon-144.png" alt=""><p>DNA</p></div>
-                <div class="gallery-item"><img src="icons/icon-152.png" alt=""><p>Gezegen</p></div>
+                <div class="gallery-item tech">
+                    <img src="icons/icon-96.png" alt="Yıldız">
+                    <h3>Yıldız</h3>
+                    <p>Premium Tasarım</p>
+                    <div class="gallery-tags">
+                        <span class="gallery-tag">#yıldız</span>
+                        <span class="gallery-tag">#altın</span>
+                    </div>
+                </div>
+                <div class="gallery-item science">
+                    <img src="icons/icon-128.png" alt="Atom">
+                    <h3>Atom</h3>
+                    <p>Kuantum Tasarım</p>
+                    <div class="gallery-tags">
+                        <span class="gallery-tag">#atom</span>
+                        <span class="gallery-tag">#bilim</span>
+                    </div>
+                </div>
+                <div class="gallery-item science">
+                    <img src="icons/icon-144.png" alt="DNA">
+                    <h3>DNA</h3>
+                    <p>Yaşam Kodu</p>
+                    <div class="gallery-tags">
+                        <span class="gallery-tag">#dna</span>
+                        <span class="gallery-tag">#genetik</span>
+                    </div>
+                </div>
+                <div class="gallery-item nature">
+                    <img src="icons/icon-152.png" alt="Gezegen">
+                    <h3>Gezegen</h3>
+                    <p>Uzay Tasarımı</p>
+                    <div class="gallery-tags">
+                        <span class="gallery-tag">#gezegen</span>
+                        <span class="gallery-tag">#uzay</span>
+                    </div>
+                </div>
+                <div class="gallery-item tech">
+                    <img src="icons/icon-167.png" alt="CPU">
+                    <h3>İşlemci</h3>
+                    <p>Teknoloji</p>
+                    <div class="gallery-tags">
+                        <span class="gallery-tag">#cpu</span>
+                        <span class="gallery-tag">#teknoloji</span>
+                    </div>
+                </div>
+                <div class="gallery-item tech">
+                    <img src="icons/icon-180.png" alt="Robot">
+                    <h3>Robot</h3>
+                    <p>Yapay Zeka</p>
+                    <div class="gallery-tags">
+                        <span class="gallery-tag">#robot</span>
+                        <span class="gallery-tag">#ai</span>
+                    </div>
+                </div>
+                <div class="gallery-item geometric">
+                    <img src="icons/icon-192.png" alt="Küp">
+                    <h3>Küp</h3>
+                    <p>3D Geometri</p>
+                    <div class="gallery-tags">
+                        <span class="gallery-tag">#küp</span>
+                        <span class="gallery-tag">#3d</span>
+                    </div>
+                </div>
+                <div class="gallery-item geometric">
+                    <img src="icons/icon-256.png" alt="Kristal">
+                    <h3>Kristal</h3>
+                    <p>Elmas Kesim</p>
+                    <div class="gallery-tags">
+                        <span class="gallery-tag">#kristal</span>
+                        <span class="gallery-tag">#elmas</span>
+                    </div>
+                </div>
             </div>
         </section>
-    </div>
+
+        <!-- COLORS SECTION -->
+        <section class="colors" id="colors">
+            <div class="section-header">
+                <h2><span>RENK PALETLERİ</span></h2>
+                <p>15 farklı renk paleti, uyumlu tasarımlar</p>
+            </div>
+
+            <div class="colors-grid">
+                <div class="color-card">
+                    <div class="color-preview" style="background: linear-gradient(135deg, #0A1929, #4169E1, #87CEEB);"></div>
+                    <h4>Mavi Tonları</h4>
+                    <p>#0A1929 • #4169E1 • #87CEEB</p>
+                </div>
+                <div class="color-card">
+                    <div class="color-preview" style="background: linear-gradient(135deg, #CD7F32, #FFD700, #C0C0C0);"></div>
+                    <h4>Metalik</h4>
+                    <p>#CD7F32 • #FFD700 • #C0C0C0</p>
+                </div>
+                <div class="color-card">
+                    <div class="color-preview" style="background: linear-gradient(135deg, #FF4444, #FF8844, #FFD700);"></div>
+                    <h4>Sıcak Renkler</h4>
+                    <p>#FF4444 • #FF8844 • #FFD700</p>
+                </div>
+                <div class="color-card">
+                    <div class="color-preview" style="background: linear-gradient(135deg, #44FF88, #44FFAA, #AA44FF);"></div>
+                    <h4>Soğuk Renkler</h4>
+                    <p>#44FF88 • #44FFAA • #AA44FF</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PREMIUM SECTION -->
+        <section class="premium" id="premium">
+            <div class="premium-content">
+                <div class="premium-left">
+                    <h3><span>PREMIUM</span> KOLEKSİYON</h3>
+                    <p>100+ katman, metalik efektler, kristal dokular ve ışık oyunlarıyla tasarlanmış özel ikonlar. Her biri 4096x4096 çözünürlükte, profesyonel kalitede.</p>
+                    
+                    <div class="premium-features">
+                        <div class="premium-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>100+ Katman</span>
+                        </div>
+                        <div class="premium-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Metalik Efektler</span>
+                        </div>
+                        <div class="premium-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Kristal Dokular</span>
+                        </div>
+                        <div class="premium-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Işık Oyunları</span>
+                        </div>
+                        <div class="premium-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>8K Kalite</span>
+                        </div>
+                        <div class="premium-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Özel Tasarım</span>
+                        </div>
+                    </div>
+                    
+                    <a href="#" class="btn btn-primary"><i class="fas fa-crown"></i> PREMIUM'A GEÇ</a>
+                </div>
+                <div class="premium-right">
+                    <img src="icons/icon-1024.png" alt="Premium İkon">
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- INSTALL PROMPT -->
     <div class="install-prompt" id="installPrompt">
-        <i class="fas fa-crown"></i><span>Uygulamayı kur</span>
+        <i class="fas fa-crown"></i>
+        <span>TEKNOÇEKİRDEK uygulamasını kur</span>
         <button id="installConfirm">KUR</button>
         <button class="close" id="installClose"><i class="fas fa-times"></i></button>
     </div>
 
     <!-- FOOTER -->
     <footer>
-        <p>© 2024 TEKNOÇEKİRDEK • 4096x4096 • 50+ İkon</p>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="icons/icon-48.png" alt="TEKNOÇEKİRDEK">
+                <p>50+ profesyonel ikon, 15 renk paleti, 4096x4096 çözünürlük, 100+ katmanlı premium teknoloji koleksiyonu.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Hızlı Linkler</h4>
+                <ul>
+                    <li><a href="#home">Ana Sayfa</a></li>
+                    <li><a href="#gallery">İkon Galerisi</a></li>
+                    <li><a href="#colors">Renk Paletleri</a></li>
+                    <li><a href="#premium">Premium</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Yasal</h4>
+                <ul>
+                    <li><a href="#">Gizlilik Politikası</a></li>
+                    <li><a href="#">Kullanım Şartları</a></li>
+                    <li><a href="#">Çerez Politikası</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h4>İletişim</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© 2024 TEKNOÇEKİRDEK. Tüm hakları saklıdır.</p>
+            <p>4096x4096 • 50+ İkon • 15 Renk • 100+ Katman</p>
+        </div>
     </footer>
 
-    <!-- JS -->
+    <!-- SCRIPTS -->
     <script src="js/01-loader.js"></script>
     <script src="js/02-menu.js"></script>
     <script src="js/03-install.js"></script>
     <script src="js/04-sw.js"></script>
     <script src="js/05-console.js"></script>
+    <script src="js/06-filter.js"></script>
+    <script src="js/07-stars.js"></script>
+    <script src="js/08-floating.js"></script>
 </body>
 </html>
