@@ -1,8 +1,8 @@
-window.addEventListener('load', function() {
-    setTimeout(() => {
-        document.getElementById('loader').style.opacity = '0';
-        setTimeout(() => {
-            document.getElementById('loader').style.display = 'none';
-        }, 500);
+window.addEventListener('load', ()=>{
+    const loader = document.getElementById('loader');
+    if(!loader) return;
+    setTimeout(()=>{
+        loader.style.opacity = '0';
+        setTimeout(()=> loader.style.display = 'none', 500);
     }, 500);
 });

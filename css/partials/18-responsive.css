@@ -1,0 +1,30 @@
+@media (max-width: 992px) {
+    .hero-content { grid-template-columns: 1fr; text-align: center; gap: 2rem; }
+    .hero p { margin-left: auto; margin-right: auto; }
+    .hero-stats, .hero-buttons { justify-content: center; }
+    .premium-content { grid-template-columns: 1fr; text-align: center; }
+    .premium-features { justify-content: center; }
+    .footer-content { grid-template-columns: repeat(2, 1fr); text-align: center; }
+    .footer-logo { grid-column: span 2; }
+}
+@media (max-width: 768px) {
+    .desktop-menu { display: none; }
+    .menu-toggle { display: flex; }
+    .stats-grid { grid-template-columns: repeat(2, 1fr); }
+    .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+    .floating-card { display: none; }
+}
+@media (max-width: 480px) {
+    .stats-grid, .gallery-grid, .colors-grid { grid-template-columns: 1fr; }
+    .premium-features { grid-template-columns: 1fr; }
+    .footer-content { grid-template-columns: 1fr; }
+    .footer-logo { grid-column: span 1; }
+    .hero h1 { font-size: 2.2rem; }
+    .btn { width: 100%; justify-content: center; }
+    .hero-buttons { flex-direction: column; }
+}
+@media (display-mode: standalone), (display-mode: fullscreen) {
+    body { padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left); }
+    nav { padding-top: calc(1rem + env(safe-area-inset-top)); }
+    .install-prompt { display: none !important; }
+}

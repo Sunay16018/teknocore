@@ -1,0 +1,39 @@
+.mobile-menu {
+    display: none;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 70px);
+    background: rgba(10,25,41,0.98);
+    backdrop-filter: blur(20px);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    z-index: 999;
+    border-top: 1px solid rgba(255,215,0,0.2);
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+}
+.mobile-menu.active {
+    display: flex;
+}
+.mobile-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    width: 80%;
+    text-align: center;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+.mobile-menu a i {
+    color: var(--gold);
+    margin-right: 10px;
+}
+.mobile-menu a:hover {
+    background: var(--gold);
+    color: var(--dark);
+}

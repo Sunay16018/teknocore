@@ -1,0 +1,36 @@
+.colors {
+    padding: 4rem 0;
+    background: rgba(255,255,255,0.02);
+}
+.colors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+.color-card {
+    background: rgba(255,255,255,0.03);
+    border-radius: 20px;
+    padding: 2rem;
+    text-align: center;
+    transition: 0.3s;
+}
+.color-card:hover {
+    transform: translateY(-10px);
+    border: 1px solid var(--gold);
+}
+.color-preview {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    box-shadow: var(--shadow-md);
+}
+.color-card h4 {
+    color: var(--gold);
+    margin-bottom: 0.5rem;
+}
+.color-card p {
+    color: var(--powder);
+    font-size: 0.9rem;
+    font-family: monospace;
+}

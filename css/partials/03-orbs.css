@@ -1,0 +1,43 @@
+.orb1 {
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    background: radial-gradient(circle, rgba(65,105,225,0.1), transparent);
+    border-radius: 50%;
+    top: -400px;
+    right: -400px;
+    animation: rotate 40s linear infinite;
+}
+.orb2 {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(255,215,0,0.1), transparent);
+    border-radius: 50%;
+    bottom: -300px;
+    left: -300px;
+    animation: rotate 50s linear infinite reverse;
+}
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+.floating-icons {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+}
+.floating-icon {
+    position: absolute;
+    font-size: 2rem;
+    color: rgba(255,255,255,0.03);
+    animation: float linear infinite;
+}
+@keyframes float {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    100% { transform: translate(calc(100vw - 100%), calc(100vh - 100%)) rotate(360deg); }
+}

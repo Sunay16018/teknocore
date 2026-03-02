@@ -1,0 +1,50 @@
+.install-btn {
+    background: var(--grad2);
+    color: var(--dark) !important;
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 700 !important;
+    box-shadow: var(--shadow-gold);
+}
+.menu-toggle {
+    display: none;
+    font-size: 1.8rem;
+    color: white;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255,255,255,0.1);
+    border-radius: 50%;
+}
+.btn {
+    padding: 1rem 2.5rem;
+    border: none;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.btn-primary {
+    background: var(--grad1);
+    color: white;
+    box-shadow: 0 10px 20px rgba(65,105,225,0.3);
+}
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px rgba(65,105,225,0.4);
+}
+.btn-secondary {
+    background: transparent;
+    border: 2px solid var(--gold);
+    color: white;
+}
+.btn-secondary:hover {
+    background: var(--gold);
+    color: var(--dark);
+}

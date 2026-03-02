@@ -1,0 +1,31 @@
+:root {
+    --dark: #0A1929;
+    --deep: #1E3C72;
+    --medium: #2A5298;
+    --royal: #4169E1;
+    --bright: #1E90FF;
+    --gold: #FFD700;
+    --silver: #C0C0C0;
+    --sky: #87CEEB;
+    --powder: #B0E0E6;
+    --grad1: linear-gradient(135deg, var(--dark), var(--royal), var(--sky));
+    --grad2: linear-gradient(135deg, #CD7F32, var(--gold), var(--silver));
+    --shadow-sm: 0 5px 15px rgba(0,0,0,0.3);
+    --shadow-md: 0 15px 30px rgba(0,0,0,0.4);
+    --shadow-lg: 0 30px 60px rgba(0,0,0,0.5);
+    --shadow-gold: 0 15px 30px rgba(255,215,0,0.3);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: var(--dark);
+    color: white;
+    overflow-x: hidden;
+    min-height: 100vh;
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+}

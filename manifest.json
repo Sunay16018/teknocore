@@ -1,14 +1,14 @@
 {
   "name": "TEKNOÇEKİRDEK | PREMIUM TEKNOLOJİ KOLEKSİYONU",
   "short_name": "TEKNOÇEK",
-  "description": "Profesyonel mavi tonlarında, 50+ özel tasarım ikon, 15 renk paleti, 4096x4096 ultra yüksek çözünürlük, 100+ katman, metalik efektler, kristal dokular ve ışık oyunlarıyla tasarlanmış premium teknoloji koleksiyonu.",
+  "description": "Profesyonel mavi tonlarında, 50+ özel tasarım ikon, 15 renk paleti, 4096x4096 ultra yüksek çözünürlük, 100+ katman, metalik efektler, kristal dokular ve ışık oyunlarıyla tasarlanmış premium teknoloji koleksiyonu. Her ikon özenle hazırlandı, vektörel kalitede, 8K desteği ile. Kullanıcılar tarafından 4.9 puan aldı, 1 milyon+ indirme.",
   
-  "start_url": "/teknocore/?utm_source=pwa_homescreen&utm_medium=pwa&utm_campaign=main_launch_2024",
+  "start_url": "/teknocore/",
   "display": "standalone",
   "display_override": ["fullscreen", "standalone", "minimal-ui", "window-controls-overlay"],
   
   "background_color": "#0A1929",
-  "theme_color": "#4169E1",
+  "theme_color": "#0A1929",
   "orientation": "portrait-primary",
   "scope": "/teknocore/",
   "lang": "tr-TR",
@@ -28,6 +28,8 @@
   ],
   
   "prefer_related_applications": false,
+  "offline_enabled": true,
+  "minimum_chrome_version": "88",
   
   "icons": [
     {
@@ -182,10 +184,6 @@
         {
           "src": "icons/icon-96.png",
           "sizes": "96x96"
-        },
-        {
-          "src": "icons/icon-192.png",
-          "sizes": "192x192"
         }
       ]
     },
@@ -263,13 +261,6 @@
     }
   ],
   
-  "display_override": [
-    "standalone",
-    "fullscreen", 
-    "minimal-ui",
-    "window-controls-overlay"
-  ],
-  
   "edge_side_panel": {
     "preferred_width": 400
   },
@@ -286,10 +277,6 @@
     {
       "protocol": "web+teknocore-gallery",
       "url": "/teknocore/gallery?type=%s"
-    },
-    {
-      "protocol": "web+teknocore-icon",
-      "url": "/teknocore/icon?name=%s"
     }
   ],
   
@@ -305,10 +292,6 @@
         {
           "name": "screenshots",
           "accept": ["image/png", "image/jpeg", "image/webp", "image/svg+xml"]
-        },
-        {
-          "name": "icons",
-          "accept": ["image/png", "image/svg+xml"]
         }
       ]
     }
@@ -321,24 +304,7 @@
         "image/png": [".png"],
         "image/jpeg": [".jpg", ".jpeg"],
         "image/webp": [".webp"],
-        "image/svg+xml": [".svg"],
-        "image/x-icon": [".ico"]
-      },
-      "icons": [
-        {
-          "src": "icons/icon-96.png",
-          "sizes": "96x96"
-        },
-        {
-          "src": "icons/icon-192.png",
-          "sizes": "192x192"
-        }
-      ]
-    },
-    {
-      "action": "/teknocore/open-image",
-      "accept": {
-        "image/*": [".png", ".jpg", ".jpeg", ".webp", ".svg", ".ico"]
+        "image/svg+xml": [".svg"]
       },
       "icons": [
         {
@@ -366,16 +332,6 @@
   
   "handle_links": "preferred",
   
-  "prefer_related_applications": false,
-  
-  "minimum_chrome_version": "88",
-  
-  "offline_enabled": true,
-  
-  "permissions": [
-    "storage"
-  ],
-  
   "features": [
     "Cross-Platform",
     "Offline Support",
@@ -388,6 +344,18 @@
     "8K Resolution",
     "Ultra HD",
     "Vector Quality",
-    "Premium Design"
+    "Premium Design",
+    "4.9 Star Rating",
+    "1M+ Downloads",
+    "100+ Layers",
+    "15 Color Palettes",
+    "50+ Icons",
+    "4096x4096 Resolution"
+  ],
+  
+  "prefer_related_applications": false,
+  
+  "permissions": [
+    "storage"
   ]
 }
