@@ -1,0 +1,418 @@
+{
+  "name": "TEKNOÇEKİRDEK | PREMIUM TEKNOLOJİ KOLEKSİYONU",
+  "short_name": "TEKNOÇEK",
+  "description": "Profesyonel mavi tonlarında, 50+ özel tasarım ikon, 15 renk paleti, 4096x4096 ultra yüksek çözünürlük, 100+ katman, metalik efektler, kristal dokular ve ışık oyunlarıyla tasarlanmış premium teknoloji koleksiyonu. Her ikon özenle hazırlandı, vektörel kalitede, 8K desteği ile.",
+  
+  "start_url": "/?utm_source=pwa_homescreen&utm_medium=pwa&utm_campaign=main_launch_2024",
+  "display": "standalone",
+  "background_color": "#0A1929",
+  "theme_color": "#4169E1",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "tr-TR",
+  "dir": "ltr",
+  
+  "categories": [
+    "productivity",
+    "design", 
+    "technology",
+    "utilities",
+    "business",
+    "education",
+    "art",
+    "graphics",
+    "photography",
+    "development"
+  ],
+  
+  "prefer_related_applications": false,
+  
+  "icons": [
+    {
+      "src": "icons/icon-32.png",
+      "sizes": "32x32",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-48.png", 
+      "sizes": "48x48",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-64.png",
+      "sizes": "64x64",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-152.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-167.png",
+      "sizes": "167x167",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-180.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-256.png",
+      "sizes": "256x256",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-384.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-1024.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-2048.png",
+      "sizes": "2048x2048",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-4096.png",
+      "sizes": "4096x4096",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  
+  "screenshots": [
+    {
+      "src": "icons/icon-1024.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "platform": "wide",
+      "label": "Ana Ekran - Premium Tasarım"
+    },
+    {
+      "src": "icons/icon-1024.png",
+      "sizes": "1024x1024",
+      "type": "image/png", 
+      "platform": "wide",
+      "label": "İkon Galerisi - 50+ Profesyonel İkon"
+    },
+    {
+      "src": "icons/icon-1024.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "platform": "wide",
+      "label": "Renk Paletleri - 15 Uyumlu Tasarım"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "platform": "narrow",
+      "label": "Mobil Ana Ekran"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "platform": "narrow",
+      "label": "Mobil Menü"
+    }
+  ],
+  
+  "shortcuts": [
+    {
+      "name": "İkon Galerisi",
+      "short_name": "İkonlar",
+      "description": "Tüm profesyonel ikonları görüntüle, detaylı incele, renk uyumlarını keşfet, favorilerine ekle",
+      "url": "/#gallery",
+      "icons": [
+        {
+          "src": "icons/icon-96.png",
+          "sizes": "96x96"
+        },
+        {
+          "src": "icons/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Renk Paletleri",
+      "short_name": "Renkler",
+      "description": "15 farklı renk paleti, mavi tonları, altın vurgular, metalik efektler, gradient geçişler",
+      "url": "/#colors",
+      "icons": [
+        {
+          "src": "icons/icon-96.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Premium Koleksiyon",
+      "short_name": "Premium",
+      "description": "Özel tasarım, 100+ katmanlı, 4096x4096 ultra yüksek çözünürlüklü premium ikonlar",
+      "url": "/#premium",
+      "icons": [
+        {
+          "src": "icons/icon-96.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Teknoloji Çekirdeği",
+      "short_name": "Çekirdek",
+      "description": "Ana uygulama ikonu, 4096x4096 çözünürlük, 20+ katman, metalik efektler",
+      "url": "/#core",
+      "icons": [
+        {
+          "src": "icons/icon-96.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Sık Kullanılanlar",
+      "short_name": "Favoriler",
+      "description": "En çok beğenilen ikonlar, kişisel koleksiyonun, özel seçimler",
+      "url": "/#favorites",
+      "icons": [
+        {
+          "src": "icons/icon-96.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Yardım & Destek",
+      "short_name": "Yardım",
+      "description": "SSS, kullanım kılavuzu, iletişim, geri bildirim gönder",
+      "url": "/#help",
+      "icons": [
+        {
+          "src": "icons/icon-96.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ],
+  
+  "related_applications": [
+    {
+      "platform": "webapp",
+      "url": "https://teknocore.app"
+    },
+    {
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details?id=app.teknocore",
+      "id": "app.teknocore"
+    },
+    {
+      "platform": "itunes",
+      "url": "https://apps.apple.com/app/teknocore/id123456789",
+      "id": "123456789"
+    },
+    {
+      "platform": "windows",
+      "url": "https://www.microsoft.com/store/apps/teknocore",
+      "id": "teknocore"
+    },
+    {
+      "platform": "chrome_web_store",
+      "url": "https://chrome.google.com/webstore/teknocore",
+      "id": "teknocore"
+    }
+  ],
+  
+  "display_override": [
+    "standalone",
+    "fullscreen", 
+    "minimal-ui",
+    "window-controls-overlay"
+  ],
+  
+  "edge_side_panel": {
+    "preferred_width": 400
+  },
+  
+  "launch_handler": {
+    "client_mode": ["focus-existing", "navigate-existing", "auto"]
+  },
+  
+  "protocol_handlers": [
+    {
+      "protocol": "web+teknocore",
+      "url": "/handle-protocol?type=%s"
+    },
+    {
+      "protocol": "web+teknocore-gallery",
+      "url": "/gallery?type=%s"
+    },
+    {
+      "protocol": "web+teknocore-icon",
+      "url": "/icon?name=%s"
+    }
+  ],
+  
+  "share_target": {
+    "action": "/share-target",
+    "method": "POST",
+    "enctype": "multipart/form-data",
+    "params": {
+      "title": "name",
+      "text": "description",
+      "url": "link",
+      "files": [
+        {
+          "name": "screenshots",
+          "accept": ["image/png", "image/jpeg", "image/webp", "image/svg+xml"]
+        },
+        {
+          "name": "icons",
+          "accept": ["image/png", "image/svg+xml"]
+        }
+      ]
+    }
+  },
+  
+  "file_handlers": [
+    {
+      "action": "/open-file",
+      "accept": {
+        "image/png": [".png"],
+        "image/jpeg": [".jpg", ".jpeg"],
+        "image/webp": [".webp"],
+        "image/svg+xml": [".svg"],
+        "image/x-icon": [".ico"]
+      },
+      "icons": [
+        {
+          "src": "icons/icon-96.png",
+          "sizes": "96x96"
+        },
+        {
+          "src": "icons/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "action": "/open-image",
+      "accept": {
+        "image/*": [".png", ".jpg", ".jpeg", ".webp", ".svg", ".ico"]
+      },
+      "icons": [
+        {
+          "src": "icons/icon-96.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ],
+  
+  "note_taking": {
+    "action": "/new-note"
+  },
+  
+  "capture_links": "never",
+  
+  "scope_extensions": [
+    {
+      "origin": "*.teknocore.app"
+    },
+    {
+      "origin": "*.teknocore.com"
+    },
+    {
+      "origin": "*.teknocore.net"
+    },
+    {
+      "origin": "*.teknocore.org"
+    },
+    {
+      "origin": "teknocore.vercel.app"
+    }
+  ],
+  
+  "handle_links": "preferred",
+  
+  "prefer_related_applications": false,
+  
+  "minimum_chrome_version": "88",
+  
+  "offline_enabled": true,
+  
+  "permissions": [
+    "storage",
+    "notifications",
+    "file-handling"
+  ],
+  
+  "features": [
+    "Cross-Platform",
+    "Offline Support",
+    "Push Notifications",
+    "File Handling",
+    "Share Target",
+    "Protocol Handlers",
+    "Edge Panel",
+    "Window Controls Overlay",
+    "Maskable Icons",
+    "8K Resolution",
+    "Ultra HD",
+    "Vector Quality",
+    "Premium Design"
+  ]
+}

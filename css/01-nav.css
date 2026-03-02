@@ -1,0 +1,69 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(10,25,41,0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255,215,0,0.2);
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logo img {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+}
+.logo span {
+    font-size: 1.4rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #CD7F32, #FFD700, #C0C0C0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.desktop-menu {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+.desktop-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+.desktop-menu a i {
+    color: #FFD700;
+    margin-right: 5px;
+}
+.desktop-menu a:hover {
+    color: #FFD700;
+}
+.install-btn {
+    background: linear-gradient(135deg, #CD7F32, #FFD700, #C0C0C0);
+    color: #0A1929 !important;
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 700 !important;
+}
+.menu-toggle {
+    display: none;
+    font-size: 1.8rem;
+    color: white;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255,255,255,0.1);
+    border-radius: 50%;
+}

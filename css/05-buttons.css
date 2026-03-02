@@ -1,0 +1,34 @@
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.btn {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: 0.3s;
+}
+.btn-primary {
+    background: linear-gradient(135deg, #0A1929, #4169E1, #87CEEB);
+    color: white;
+    box-shadow: 0 10px 20px rgba(65,105,225,0.3);
+}
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px rgba(65,105,225,0.4);
+}
+.btn-secondary {
+    background: transparent;
+    border: 2px solid #FFD700;
+    color: white;
+}
+.btn-secondary:hover {
+    background: #FFD700;
+    color: #0A1929;
+}

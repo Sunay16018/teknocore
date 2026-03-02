@@ -1,0 +1,30 @@
+#gallery {
+    padding: 3rem 0;
+}
+#gallery h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+#gallery h2 span {
+    background: linear-gradient(135deg, #CD7F32, #FFD700, #C0C0C0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#gallery p {
+    text-align: center;
+    color: #B0E0E6;
+    margin-bottom: 3rem;
+}
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5rem;
+}
+.gallery-item {
+    text-align: center;
+}
+.gallery-item img {
+    width: 96px;
+    height: 96px;
+}

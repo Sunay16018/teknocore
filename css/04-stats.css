@@ -1,0 +1,48 @@
+.hero-stats {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+.stat-item {
+    text-align: center;
+}
+.stat-number {
+    font-size: 2rem;
+    font-weight: 900;
+    background: linear-gradient(135deg, #CD7F32, #FFD700, #C0C0C0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: block;
+}
+.stat-label {
+    color: #87CEEB;
+    font-size: 0.9rem;
+}
+.stats-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    padding: 3rem 0;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    margin: 2rem 0;
+}
+.stat-card {
+    text-align: center;
+    padding: 1.5rem;
+    background: rgba(255,255,255,0.03);
+    border-radius: 20px;
+}
+.stat-card i {
+    font-size: 2.5rem;
+    color: #FFD700;
+    margin-bottom: 0.5rem;
+}
+.stat-card .number {
+    font-size: 2rem;
+    font-weight: 900;
+    background: linear-gradient(135deg, #CD7F32, #FFD700, #C0C0C0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
